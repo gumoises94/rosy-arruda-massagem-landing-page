@@ -263,8 +263,7 @@ function App() {
               <div className="bg-white p-8 rounded-2xl shadow-lg">
                 <h4 className="text-2xl font-bold text-gray-900 mb-6 text-center">Informações de Contato</h4>
 
-                <div className="grid grid-cols-2 gap-6">
-                  {/* Coluna Esquerda - Localização e Horário */}
+                <div className="grid lg:grid-cols-2 gap-6">
                   <div className="space-y-6">
                     <div className="flex flex-col items-center text-center">
                       <div className="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center mb-3">
@@ -318,9 +317,6 @@ function App() {
                       </div>
                     </div>
                   </div>
-
-                  {/* Coluna Direita - Telefone e E-mail */}
-
                 </div>
               </div>
             </div>
