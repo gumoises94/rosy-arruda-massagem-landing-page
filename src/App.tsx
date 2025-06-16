@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Smartphone , Instagram, MapPin, Heart, Home, Flower, Menu, X, Star, Clock, Award } from 'lucide-react';
+import { Instagram, MapPin, Heart, Home, Flower, Menu, X, Star, Clock, Award } from 'lucide-react';
 import Logo from './assets/logo-without-text.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
@@ -267,7 +267,7 @@ function App() {
                   <div className="space-y-6">
                     <div className="flex flex-col items-center text-center">
                       <div className="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center mb-3">
-                        <Smartphone className="w-6 h-6 text-rose-600" />
+                        <FontAwesomeIcon icon={faWhatsapp} className="w-6 h-6 text-rose-600" />
                       </div>
                       <div>
                         <p className="font-semibold text-gray-900 mb-1">Celular/WhatsApp</p>
