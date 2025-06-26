@@ -356,6 +356,9 @@ function App() {
             <p className="text-gray-500 text-sm">
               © {new Date().getFullYear()} Rosy Arruda Massagem. Todos os direitos reservados.
             </p>
+            <p className="text-gray-500 text-sm" style={{fontSize: ".805rem", lineHeight: "0.75rem", marginTop: "20px"}}>
+              Desenvolvido por Saron Software Development. Contato: +55 (19) 99377-1515
+            </p>
           </div>
         </div>
       </footer>
