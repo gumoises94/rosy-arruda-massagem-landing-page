@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ScrollToHashElement from '../components/ScrollToHashElement'
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import "./css/datepicker.css";
 
 const Scheduling: React.FC = () => {
+  const [selectedDate, setSelectedDate] = useState(null);
+
   return (
     <div className="min-h-screen bg-white">
         <ScrollToHashElement />
@@ -30,6 +35,20 @@ const Scheduling: React.FC = () => {
                         type="tel" 
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-colors"
                         placeholder="(19) 99999-9999"
+                    />
+                    </div>
+
+                    <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Selecione a data/hora de interesse</label>
+                    <DatePicker
+                        selected={selectedDate}
+                        onChange={date => date && setSelectedDate(date)}
+                        showTimeSelect
+                        timeFormat="HH:mm"
+                        timeIntervals={30}
+                        dateFormat="dd/MM/yyyy HH:mm"
+                        timeCaption="Hora"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500"
                     />
                     </div>
 
